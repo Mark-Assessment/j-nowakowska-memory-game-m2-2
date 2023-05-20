@@ -5,35 +5,42 @@
 }
 
 body {
-    height: 100vh;
-    background-color: #fcfefe;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height : 100vh;
+    background: #FCE28C; 
 }
 
-img {
-    width: 100px;
+.card .back-view img {
+    max-width: 45px;
 }
 
-.memory-game {
-    height: 640px;
-    width : 640px;
+.card .front-view {
+    display: none;
+}
+
+.cards, .card, .view {
     display: flex;
-    border: 2px solid #3CBADA; 
+    align-items: center;
+    justify-content: center;
+} 
+
+.cards{
+    height: 100%;
+    width: 100%;
     flex-wrap: wrap;
 }
 
-.memory-card {
-    margin: 5px;
-    width: calc(25%- 10px);
-    height:calc(33.333% - 10px);
-    position: relative;
+.cards .card {
+    height: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 10px);
+    cursor: pointer;
 }
 
-.front , .back {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    background-color: 	#808080;
-    border: 2px solid #FF00FF;
-    position: absolute;
+.wrapper{
+    height: 400px;
+    width: 400px;
+    background : #FFFFFF;
+    border-radius: 10px;
 }
