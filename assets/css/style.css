@@ -11,8 +11,10 @@ body {
 }
 
 .nav-bar {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Marcellus', serif;
     line-height: 80px;
+    padding:20px;
+    margin: 20px;
 }
 
 .nav-bar a {
@@ -23,8 +25,13 @@ body {
     max-width: 100px;
 }
 
-.card .front-view {
+.card .back-view {
     display: none;
+}
+
+.card .front-view img{
+    max-width: 50px;
+    background-color: #F95813;
 }
 
 .cards, .card, .view {
@@ -81,6 +88,6 @@ footer > a {
 
 footer > p {
     color: #000000;
-    font-family: 'Architects Daughter', cursive;
+    font-family: font-family: 'Marcellus', serif;
     padding: 10px;
 }
