@@ -6,5 +6,26 @@
 
 body {
     height: 100vh;
-    background-color: #fefbd8;
+    background-color: #fcfefe;
+}
+
+img {
+    width: 100px;
+}
+
+.memory-game {
+    height: 650px;
+    width : 650px;
+    display: flex;
+    border: 2px solid #3CBADA; 
+}
+
+.memory-card {
+    border: 2px solid #FFFF00;
+    width:25%;
+    height:33.333%;
+}
+
+.front , .back {
+    border: 2px solid #FF00FF;
 }
