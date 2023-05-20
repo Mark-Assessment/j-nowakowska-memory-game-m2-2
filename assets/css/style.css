@@ -7,6 +7,7 @@
 body {
     height: 100vh;
     background-color: #fcfefe;
+    display: flex;
 }
 
 img {
@@ -14,18 +15,25 @@ img {
 }
 
 .memory-game {
-    height: 650px;
-    width : 650px;
+    height: 640px;
+    width : 640px;
     display: flex;
     border: 2px solid #3CBADA; 
+    flex-wrap: wrap;
 }
 
 .memory-card {
-    border: 2px solid #FFFF00;
-    width:25%;
-    height:33.333%;
+    margin: 5px;
+    width: calc(25%- 10px);
+    height:calc(33.333% - 10px);
+    position: relative;
 }
 
 .front , .back {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: 	#808080;
     border: 2px solid #FF00FF;
+    position: absolute;
 }
