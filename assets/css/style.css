@@ -26,7 +26,7 @@ body {
 }
 
 .card .back-view {
-    display: none;
+   transform: rotateY(-180deg);
 }
 
 .card .front-view img{
@@ -51,6 +51,9 @@ body {
     height: calc(100% / 4 - 10px);
     width: calc(100% / 4 - 10px);
     cursor: pointer;
+    position: relative;
+    perspective: 800px;
+    transform-style: preserve-3d;
 }
 
 .wrapper{
@@ -67,9 +70,18 @@ body {
     background: #FFFFFF;
     box-shadow: 0 3px 8px #000000;
     border-radius: 5px;
-
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.25s linear;
 }
 
+.card:hover .back-view{
+    transform: rotateY(0);
+}
+
+.card:hover .front-view{
+    transform: rotateY(180deg);
+}
 /*-----footer css-----*/
 
 footer{
