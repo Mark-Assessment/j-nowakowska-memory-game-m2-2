@@ -73,13 +73,15 @@ body {
     position: absolute;
     backface-visibility: hidden;
     transition: transform 0.25s linear;
+    pointer-events: none;
+    user-select: none;
 }
 
-.card:hover .back-view{
+.card.flip .back-view{
     transform: rotateY(0);
 }
 
-.card:hover .front-view{
+.card.flip .front-view{
     transform: rotateY(180deg);
 }
 /*-----footer css-----*/
