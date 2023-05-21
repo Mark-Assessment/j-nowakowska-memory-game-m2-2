@@ -19,8 +19,18 @@ function flipCard(e) {
 
 function matchCards(img1, img2) {
     if(img1 === img2) {
-        return console.log("Cards matched")
+        return console.log("Cards has been matched")
     }
+
+    setTimeout(() => {
+    cardOne.classList.add("shake");
+    cardTwo.classList.add("shake");
+    }, 500);
+
+    setTimeout(() => {
+    cardOne.classList.remove("shake", "flip");
+    cardTwo.classList.remove("shake", "flip");
+    }, 1000);
 }
 
 
