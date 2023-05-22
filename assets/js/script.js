@@ -1,11 +1,10 @@
 const cards = document.querySelectorAll(".card");
 
 let cardOne, cardTwo;
-let matchedCard=0;
+let matched = 0;
 let disableDeck = false;
 
-function flipCard(e) {
-    let clickedCard = e.target;
+function flipCard({target: clickedCard}) {
     if(clickedCard !== cardOne && !disableDeck) {
         clickedCard.classList.add("flip");
         if(!cardOne) {
@@ -14,19 +13,19 @@ function flipCard(e) {
     cardTwo = clickedCard;
     disableDeck = true;
 
-    let cardOneImg = cardOne.querySelector("img"),
-    cardTwoImg = cardTwo.querySelector("img");
+    let cardOneImg = cardOne.querySelector(".back-view img").src,
+    cardTwoImg = cardTwo.querySelector(".back-view img").src;
     matchCards(cardOneImg, cardTwoImg);
   }
 }
 
 function matchCards(img1, img2) {
     if(img1 === img2) {
-        matchedCard++;
-        if(matchedCard == 8) {
+        matched++;
+        if(matched == 8) {
             setTimeout(() =>{
                 return shuffleCard();
-            }, 850);
+            }, 1200);
         }
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
@@ -44,17 +43,24 @@ function matchCards(img1, img2) {
     cardTwo.classList.remove("shake", "flip");
     cardOne = cardTwo  = "";
     disableDeck = false;
-    }, 1200);
+    }, 1500);
 }
 
 function shuffleCard() {
-    matchedCard = 0;
+    matched = 0;
+    disableDeck = false;
     cardOne = cardTwo = "";
-    cards.forEach(card =>{
-        card.addEventListener("click", flipCard);
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8]
+    arr.sort(() => Math.random() > 0.5 ? 1 : -1);
+
+    cards.forEach((card, i)=>{
         card.classList.remove("flip");
+        let imgTag = card.querySelector(".back-view img");
+        card.addEventListener("click", flipCard);
     });
 }
+
+shuffleCard();
 
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
