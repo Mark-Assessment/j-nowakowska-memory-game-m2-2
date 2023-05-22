@@ -1,21 +1,21 @@
 const cards = document.querySelectorAll(".card");
 
-let cardOne, cardTwo;
+let firstCard, secondCard;
 let matched = 0;
 let disableDeck = false;
 
 function flipCard({target: clickedCard}) {
-    if(clickedCard !== cardOne && !disableDeck) {
+    if(clickedCard !== firstCard && !disableDeck) {
         clickedCard.classList.add("flip");
-        if(!cardOne) {
-     return cardOne = clickedCard;
+        if(!firstCard) {
+     return firstCard = clickedCard;
     }
-    cardTwo = clickedCard;
+    secondCard = clickedCard;
     disableDeck = true;
 
-    let cardOneImg = cardOne.querySelector(".back-view img").src,
-    cardTwoImg = cardTwo.querySelector(".back-view img").src;
-    matchCards(cardOneImg, cardTwoImg);
+    let firstCardImg = firstCard.querySelector(".back-view img").src,
+    secondCardImg = secondCard.querySelector(".back-view img").src;
+    matchCards(firstCardImg, secondCardImg);
   }
 }
 
@@ -27,21 +27,21 @@ function matchCards(img1, img2) {
                 return shuffleCard();
             }, 1200);
         }
-        cardOne.removeEventListener("click", flipCard);
-        cardTwo.removeEventListener("click", flipCard);
-        cardOne = cardTwo  = "";
+        firstCard.removeEventListener("click", flipCard);
+        secondCard.removeEventListener("click", flipCard);
+        firstCard = secondCard  = "";
         return disableDeck = false;
     }
 
     setTimeout(() => {
-    cardOne.classList.add("shake");
-    cardTwo.classList.add("shake");
+    firstCard.classList.add("shake");
+    secondCard.classList.add("shake");
     }, 300);
 
     setTimeout(() => {
-    cardOne.classList.remove("shake", "flip");
-    cardTwo.classList.remove("shake", "flip");
-    cardOne = cardTwo  = "";
+    firstCard.classList.remove("shake", "flip");
+    secondCard.classList.remove("shake", "flip");
+    firstCard = secondCard  = "";
     disableDeck = false;
     }, 1500);
 }
@@ -49,7 +49,7 @@ function matchCards(img1, img2) {
 function shuffleCard() {
     matched = 0;
     disableDeck = false;
-    cardOne = cardTwo = "";
+    firstCard = secondCard = "";
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8]
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
 
@@ -65,4 +65,6 @@ shuffleCard();
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
+
+
 

@@ -79,12 +79,13 @@ body {
     transform-style: preserve-3d;
 }
 
-.wrapper{
+.memory-game{
     height: 700px;
     width: 700px;
     background : #FFFFFF;
     border-radius: 10px;
     padding: 20px;
+    margin : 0 auto ;
 }
 
 .cards .card .view{
@@ -109,24 +110,26 @@ body {
 }
 
 .card.shake{
-    animation:shake 0.35s ease-in-out;
+    animation: shake 0.35s ease-in-out;
 }
+
 @keyframes shake{
-    0%, 100%{
-        transform: translateX(0);
-    }
-    20%{
-        transform: translateX(-13px);
-    }
-    40%{
-        transform: translateX(13px);
-    }
-    60% {
-        transform: translateX(-8px);
-    }
-    80% {
-        transform: translateX(8px);
-    }
+     10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+
 }
 /*-----footer css-----*/
 
