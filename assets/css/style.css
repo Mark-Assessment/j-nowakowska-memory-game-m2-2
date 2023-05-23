@@ -58,6 +58,34 @@ body {
     margin-left: 50px;
 }
 
+.game-buttons {
+    padding: 50px 0;
+}
+
+button {
+    cursor: pointer;
+    margin: 0 auto;
+    height: 70px;
+    font-family: 'Marcellus', serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #393e46;
+    background-color: #f2f2f2;
+    padding : 20px;
+    border-radius: 10px;
+    border: 0;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+legend {
+    border-radius: 15px;
+    text-align: center;
+    background-color: #393e46;
+    padding: 4px;
+}
+
+
 /*
 .cloud{
    width: 20px;
@@ -166,11 +194,61 @@ footer > a {
     color: #F95813;
     padding: 5px 10px;
     text-decoration: none;
+    font-size: 30px;
 }
 
 
 footer > p {
     color: #000000;
-    font-family: font-family: 'Marcellus', serif;
+    font-family:'Marcellus', serif;
     padding: 10px;
+}
+
+/*-----clock css-------*/
+
+.clock {
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 0 10px;
+    border-radius : 20px;
+    background-color:#f96d00;
+}
+
+.clock span{
+    font-weight: 700;
+}
+
+.clock p {
+    margin: 0 auto;
+}
+
+/*------radio buttons------*/
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+.levels i{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.levels {
+  text-align: center;
+}
+
+.game-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+fieldset {
+    display: flex;
+    padding: 20px;
+    border : none;
+    border-radius: 5px;
+    justify-content: space-around;
+    background : #f96d00;
 }
