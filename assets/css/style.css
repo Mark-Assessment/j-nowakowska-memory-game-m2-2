@@ -274,3 +274,25 @@ p {
     font-family: 'Marcellus', serif;
     padding: 50px;
 }
+
+/* --------media queries----------*/
+@media screen and (max-width: 1000px) {
+     *{
+        margin:0;
+        padding:0;
+        border:0;
+    }
+
+    .game-buttons {
+        width: 100%;
+        font-size : 20px;
+        height: 200px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+
+
+}

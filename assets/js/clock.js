@@ -1,4 +1,4 @@
-const startingTime = 0.1;
+const startingTime = 0.3;
 let time = startingTime * 60;
 
 const clockEl  = document.getElementById("clock");
