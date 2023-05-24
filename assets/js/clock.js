@@ -15,6 +15,10 @@ function updateClock () {
     } 
 
     clockEl.innerHTML  = `${minutes}:${seconds}`;
+
+    if (time <= 0) {
+    clearInterval(timerInterval);
+  }
     time--;
 
 }

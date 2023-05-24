@@ -28,7 +28,7 @@ body {
     color: #000000;
     font-size :20px;
     display : block;
-    padding : 10px;
+    padding : 10px 5px;
 
 }
 
@@ -44,8 +44,8 @@ body {
 
 .active {
     background-color : #f96d00;
-    opacity : 0.3 ; 
-    border-radius: 15px;
+    opacity : 0.7 ; 
+    border-radius: 5px;
 }
 
 
@@ -56,22 +56,24 @@ body {
 
 .logo{
     margin-left: 50px;
+    margin-top: 20px;
 }
 
 .game-buttons {
-    padding: 50px 0;
+    padding: 0 50px;
+    margin-top: 30px;
 }
 
 button {
     cursor: pointer;
-    margin: 0 auto;
-    height: 70px;
+    height: 80px;
     font-family: 'Marcellus', serif;
     font-size: 40px;
+    text-align: center;
     font-weight: 400;
     color: #393e46;
     background-color: #f2f2f2;
-    padding : 20px;
+    padding : 5px;
     border-radius: 10px;
     border: 0;
     user-select: none;
@@ -85,7 +87,9 @@ legend {
     padding: 4px;
 }
 
-
+h1 {
+    font-size: 30px;
+}
 /*
 .cloud{
    width: 20px;
@@ -209,10 +213,10 @@ footer > p {
 .clock {
     font-family: 'Marcellus', serif;
     font-size: 20px;
-    font-weight: 400;
-    margin: 0 auto;
-    padding: 0 10px;
-    border-radius : 20px;
+    font-weight: 600;
+    text-align: center;
+    padding:40px 20px 20px 20px ;
+    border-radius : 5px;
     background-color:#f96d00;
 }
 
@@ -242,13 +246,31 @@ input[type="radio"]{
 .game-buttons {
     display: flex;
     justify-content: space-around;
+    padding: 5px;
 }
 
 fieldset {
     display: flex;
-    padding: 20px;
+    padding: 40px;
     border : none;
     border-radius: 5px;
     justify-content: space-around;
     background : #f96d00;
+}
+
+/*------rules section css------*/
+
+p {
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    text-align: center ;
+    padding-bottom: 20px;
+    display:block;
+    line-height: 50px
+}
+
+.rules-heading {
+    text-align: center;
+    font-family: 'Marcellus', serif;
+    padding: 50px;
 }
