@@ -1,6 +1,7 @@
 // cards, flip and shake 
 
-const cards = document.querySelectorAll(".card");
+let cards = document.querySelectorAll(".card");
+
 
 let firstCard, secondCard;
 let matched = 0;
@@ -26,7 +27,8 @@ function matchCards(img1, img2) {
         matched++;
         if(matched == 8) {
             setTimeout(() =>{
-                return shuffleCard();
+              //  return shuffleCard();
+              console.log("I finshed the game");
             }, 1200);
         }
         firstCard.removeEventListener("click", flipCard);
@@ -52,8 +54,12 @@ function shuffleCard() {
     matched = 0;
     disableDeck = false;
     firstCard = secondCard = "";
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8]
-    arr.sort(() => Math.random() > 0.5 ? 1 : -1);
+    
+    let list = document.querySelector('#cardul'), i;
+
+    for (i = list.children.length; i >= 0; i--) {
+    list.appendChild(list.children[Math.random() * i | 0]);
+}
 
     cards.forEach((card, i)=>{
         card.classList.remove("flip");
@@ -101,6 +107,7 @@ function updateClock () {
 //WinGame function
 
 function endGame() {
+    console.log("endGame called");
     clearInterval(clockInterval);
     console.log("MATCHED", matched);
 
