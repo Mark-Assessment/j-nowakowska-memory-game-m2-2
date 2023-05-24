@@ -1,3 +1,5 @@
+// cards, flip and shake 
+
 const cards = document.querySelectorAll(".card");
 
 let firstCard, secondCard;
@@ -66,4 +68,54 @@ cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
 
+//clock
+
+const startingTime = 0.3;
+let time = startingTime * 60;
+
+const clockEl  = document.getElementById("clock");
+
+setInterval (updateClock, 1000);
+
+function updateClock () {
+
+    const minutes = Math.floor(time/60);
+    let seconds = time % 60 ;
+
+    if (time < 10){
+    seconds = `0${seconds}`;
+    } 
+
+    clockEl.innerHTML  = `${minutes}:${seconds}`;
+
+    if (time <= 0) {
+    clearInterval(timerInterval);
+  }
+    time--;
+
+}
+
+
+
+//WinGame function
+
+
+function winGame(){
+
+    console.log("In winGame function");
+    console.log("MATCHED: ", matched);
+    console.log("clockEl: ", clockEl);
+
+    if (matched === 8 && "clockEl" === 0){
+        alert("You Won! Congratulations");
+    }
+     else {
+        alert("You Lost - better luck next Time");
+     }
+}
+
+winGame();
+
+
+document.getElementById("start").onclick = function() {updateClock()};
 
