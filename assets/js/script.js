@@ -75,7 +75,7 @@ let time = startingTime * 60;
 
 const clockEl  = document.getElementById("clock");
 
-setInterval (updateClock, 1000);
+clockInterval = setInterval(updateClock, 1000);
 
 function updateClock () {
 
@@ -88,33 +88,29 @@ function updateClock () {
 
     clockEl.innerHTML  = `${minutes}:${seconds}`;
 
-    if (time <= 0) {
-    clearInterval(timerInterval);
+    if(time <=0) {
+    endGame();
+
   }
     time--;
 
 }
 
-
+// levels
 
 //WinGame function
 
+function endGame() {
+    clearInterval(clockInterval);
+    console.log("MATCHED", matched);
 
-function winGame(){
+    if(matched === 8){
+        alert("YOU WIN");
 
-    console.log("In winGame function");
-    console.log("MATCHED: ", matched);
-    console.log("clockEl: ", clockEl);
-
-    if (matched === 8 && "clockEl" === 0){
-        alert("You Won! Congratulations");
+    } else {
+        alert("YOU LOSE");
     }
-     else {
-        alert("You Lost - better luck next Time");
-     }
 }
-
-winGame();
 
 
 document.getElementById("start").onclick = function() {updateClock()};
