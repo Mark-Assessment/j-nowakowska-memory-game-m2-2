@@ -40,7 +40,7 @@ function matchCards(img1, img2) {
     setTimeout(() => {
     firstCard.classList.add("shake");
     secondCard.classList.add("shake");
-    }, 300);
+    }, 500);
 
     setTimeout(() => {
     firstCard.classList.remove("shake", "flip");
@@ -120,5 +120,14 @@ function endGame() {
 }
 
 
-document.getElementById("start").onclick = function() {updateClock()};
+let newStartBtn = document.getElementById("start");
+newStartBtn.onclick = function(e) {
+    let newRadioLevel = document.querySelector('input[name="level"]:checked');
+    if (newRadioLevel.value === "beginner") {
+        time = 60;
+    } else {
+        time = 30;
+    }
+};
+
 
