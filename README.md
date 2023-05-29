@@ -345,3 +345,50 @@ The developer runs into several issues during the development of this site. The 
     - The navigation bar is easily accessible and visible at the top of the page.
     - The navigation bar takes the user to the correct destination and is labelled correctly.
     - Website layout is easy to navigate. 
+
+## User testing 
+A few friends and family members were asked to review the page for user experience and to point out any bugs/issues. The input of this group led to small UX adjustments to improve the overall site appearance and user experience. Some of them included: adding the "Quit" button to the site and adjusting the colour scheme and graphics.
+
+
+## Deployment 
+This milestone project was developed using [Codeanywhere](https://codeanywhere.com/signin "Link to Codeanywhere site"), which was then committed and pushed to GitHub using the Codeanywhere terminals.
+
+### Deploying on GitHub Pages
+Below there are instructions on how to successfully deploy this page to GitHub Pages from its GitHub repository.
+
+1. Sign up to [GitHub](https://github.com/signup "Link to the GitHub Sign Up Page") or if you already have an account, simply [Log In](https://github.com/login "Link to log in to GitHub")
+2. Find the [GitHub Repository](https://github.com/juginowakowska/milestone-project2/tree/main "Link to the Memory Card Game Repository)
+3. At the top of the repository, select Settings from the menu items.
+4. Scroll down the Settings page to the "Pages" section.
+5. Under "Source" click the drop-down menu labelled "None" and select "Main".
+6. Upon selection, the page will automatically refresh meaning that the website is now deployed.
+7. Scroll back down to the "Pages" section to retrieve the deployed link.
+
+To work on the project code within a local IDE, such as VS code etc :
+1. Follow this link to the project [Github Repository](https://github.com/juginowakowska/milestone-project2/tree/main/)
+2. Under the repository name click "Clone or download".
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
+4. In your local IDE open the terminal.
+5. Change the current working directory to the location where you want the clone directory to be made.
+6. Type - git clone - and then paste the URL you copied in Step 3.
+7. Press Enter and your local clone will be created.
+
+## Credits
+
+### Content 
+- Text used in the project was borrowed and adapted from :
+    - [Wikipedia]( https://en.wikipedia.org/wiki/Concentration_(card_game) "Link to Wikipedia Article")
+    - [Board Games Galore](https://board-games-galore.fandom.com/wiki/Memory "Link to Board Games Galore")
+### Code
+- Multiple websites were consulted and visited whilst developing this project in order to better understand the code that is being used and utilise the developer's knowledge gained so far. Pages used for reference are included below :
+    - [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
+    - [Stack Overflow](https://stackoverflow.com/ "Link to Stack Overflow")
+- Any borrowed code is mentioned and acknowledged in the notes in the Gitpod 
+
+### Media
+- Various platforms and pages were used for sourcing images included in this project, the main page used was [Google Images](https://www.google.com/imghp?hl=EN "Link to Google Images Page")
+
+## Acknowledgements 
+- I would like to thank my mentor Owonikoko Oluwaseun for her assistance and patience, while I was preparing this second Milestone Project.
+- I would also like to thank the coders' community who created various documents explaining how HTML5, CSS3 and JavaScript work, so I could use that as a base to create my own, unique game.
+- I would like to thank my family and friends for their objective feedback and support.
