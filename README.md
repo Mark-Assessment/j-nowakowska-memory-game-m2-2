@@ -364,7 +364,7 @@ website
   <img src="assets/images/readme img/active site test - home.png" width="100%" alt="nav-bar home test">
 </p> 
 
-- Clicking on the navigation bar menu items to take the user to the correct page on the
+- Clicking on the footer items to take the user to the correct page on the
 website
     Facebook
     Twitter
@@ -463,8 +463,6 @@ Manual testing was conducted on the following elements of the [About Page](about
 - The responsiveness of the page
 <p>
   <img src="assets/images/readme img/responsiveness about test .png" width="100%" alt="about page responsiveness test">
-  <img src="" width="100%" alt="about page rules responsiveness test">
-  <img src="" width="100%" alt="about page footer responsiveness test">
 </p>  
 
 

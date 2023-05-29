@@ -78,6 +78,7 @@ button {
     border: 0;
     user-select: none;
     touch-action: manipulation;
+    margin-left: 50px;
 }
 
 .display-none {
@@ -367,9 +368,9 @@ p {
 
     button {
         font-size: 20px;
-        margin: 0 auto;
+        margin-right: 50px;
         height: 20px;
-        padding: 0 10px;
+        padding-right: 10%;
     }
 
     legend {
@@ -435,7 +436,7 @@ p {
         font-size: 20px;
         margin: 0 auto;
         height: 20px;
-        padding: 0 10px;
+        padding-right: 30px;
     }
 
     legend {
@@ -551,6 +552,11 @@ p {
     p {
         font-size: 10px;
         line-height: 20px;
+    }
+
+    button { 
+        margin-left: 40px;
+        padding-right: 30px;
     }
 
 
