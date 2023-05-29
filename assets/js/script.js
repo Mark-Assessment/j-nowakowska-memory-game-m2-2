@@ -2,8 +2,11 @@
 
 let cards = document.querySelectorAll(".card");
 let startButton = document.getElementById("start");
+let quitButton = document.getElementById("reset");
 let newRadioLevel = document.querySelector('input[name="level"]:checked');
 startButton.addEventListener("click", newGame);
+
+quitButton.addEventListener("click", quitGame);
 
 
 
@@ -159,9 +162,10 @@ function endGame() {
 }
 
 //Quit button
-//let quitButton = document.getElementById("quit").reset();
 
-/*function quitGame() {
+
+function quitGame() {
+    console.log('quitGame')
     cards.forEach(card => {
         card.classList.remove("flip");
     });
@@ -169,17 +173,12 @@ function endGame() {
     cards.forEach(card => {
         card.addEventListener("click", flipCard);
     });
-    disableDeck = false;
+    disableDeck = true;
 
-    let newRadioLevel = document.querySelector('input[name="level"]:checked');
-    if (newRadioLevel.value === "beginner") {
-        time = 60;
-    } else {
-        time = 30;
-    }
-    clockInterval = setInterval(updateClock, 1000);
+    document.getElementById("clock").textContent = "00:00"; 
+    clearInterval(clockInterval);
 
+    startButton.addEventListener("click", newGame);
 
-    quitButton.removeEventListener("click", quitGame);
-}*/
+}
 
