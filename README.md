@@ -383,22 +383,22 @@ Manual testing was conducted on the following elements of the [Home Page](index.
 
 - The responsiveness of the page
 <p>
-  <img src="" width="100%" alt="home content responsiveness test">
-  <img src="" width="100%" alt="home page responsiveness test">
-  <img src="" width="100%" alt="home page rules responsiveness test">
-  <img src="" width="100%" alt="home page footer responsiveness test">
+  <img src="assets/images/readme img/responsiveness home test.png" width="100%" alt="home content responsiveness test">
+  <img src="assets/images/readme img/responsiveness home test 1.png" width="100%" alt="home page responsiveness test">
+  <img src="assets/images/readme img/responsiveness home test 3.png" width="100%" alt="home page rules responsiveness test">
+  
 </p>  
 
 - The timer is not starting automatically when the page is loaded but after the "Start" button is pressed.
 
  <p>
-  <img src="" width="100%" alt="timer empty">
+  <img src="assets/images/readme img/timer is not starting auto.png" width="100%" alt="timer empty">
 </p>  
 
 - Only the "Start" button is visible as the page is loaded and it changes into a "Quit" button after the game had started.
 
  <p>
-  <img src="" width="100%" alt="Start/Quit button test">
+  <img src="assets/images/readme img/start button.png" width="100%" alt="Start/Quit button test">
  <img src="assets/images/readme img/quit button.png" width="100%" alt="Start/Quit button test">
 </p>  
 
@@ -406,57 +406,58 @@ Manual testing was conducted on the following elements of the [Home Page](index.
 
 <p>
   <img src="assets/images/readme img/greyed out radio.png" width="100%" alt="Grayed out radio buttons">
-  <img src="" width="100%" alt="Radio buttons back to normal">
+  <img src="assets/images/readme img/normal radio btn .png" width="100%" alt="Radio buttons back to normal">
 </p>  
 
 - Difficulty levels dictated by radio buttons are functional as they influence the amount of time on the timer.
 
 <p>
-  <img src="" width="100%" alt="level 1 - 30 seconds timer">
- <img src="" width="100%" alt="level 2 - 1 minute timer">
+  <img src="assets/images/readme img/radio difficult.png" width="100%" alt="level 1 - 30 seconds timer">
+ <img src="assets/images/readme img/radio easy.png" width="100%" alt="level 2 - 1 minute timer">
 </p> 
 
 - All cards are face down when the page is loaded and they cannot be flipped until the "Start" button is pressed.
 
 <p>
-  <img src="" width="100%" alt=">
+  <img src="assets/images/readme img/cards face down.png" width="100%" alt="all cards face down">
 </p>  
 
 - The cursor changes to the pointer if it hovers over the cards
 
 <p>
-  <img src="" width="100%" alt="cursor test">
+  <img src="assets/images/readme img/cursor normal.png" width="100%" alt="cursor test">
+  <img src="assets/images/readme img/cursor poiter.png" width="100%" alt="cursor test">
 </p> 
 
 - The cards can only be flipped if the game is running, triggered by the "Start" button.
 
 <p>
-  <img src="" width="100%" alt="cards being flipped- game running">
-<img src="" width="100%" alt="cards not being flipped- game not running">
+  <img src="assets/images/readme img/card flipped game run.png" width="100%" alt="cards being flipped- game running">
+<img src="assets/images/readme img/cards not flip no run.png" width="100%" alt="cards not being flipped- game not running">
 </p> 
 
 - You won an alert if all cards are matched before the timer runs out.
 
 <p>
-  <img src="" width="100%" alt="you won alert">
+  <img src="assets/images/readme img/you won, timer stop.png" width="100%" alt="you won alert">
 </p> 
 
 - You lost the alert if all cards are not matched before the timer runs out.
 
 <p>
-  <img src="" width="100%" alt="you lost alert">
+  <img src="assets/images/readme img/you lost.png" width="100%" alt="you lost alert">
 </p> 
 
 - The timer stops as soon as the player won the game.
 
 <p>
-  <img src="" width="100%" alt="timer after winning">
+  <img src="assets/images/readme img/you won, timer stop.png" width="100%" alt="timer after winning">
 </p> 
 
 - The timer goes back to 00:00 and cards flip back and shuffle after every game
 
 <p>
-  <img src="" width="100%" alt="new game">
+  <img src="assets/images/readme img/back to 0.png" width="100%" alt="new game">
 </p> 
 
 ## Automated Testing
