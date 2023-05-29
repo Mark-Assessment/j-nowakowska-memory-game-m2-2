@@ -80,6 +80,10 @@ button {
     touch-action: manipulation;
 }
 
+.display-none {
+    display: none;
+}
+
 legend {
     border-radius: 15px;
     text-align: center;
@@ -414,7 +418,7 @@ p {
 }
 
 /* --------media queries telephone----------*/
-@media screen and (max-width: 491px) {
+@media screen and (max-width: 572px) {
     .nav-bar {
         font-size: 100%;
     }
@@ -495,7 +499,7 @@ p {
 }
 
 /*------------media queries small phone---------*/
-@media screen and (max-width: 397px) {
+@media screen and (max-width: 392px) {
 
     .card .back-view img {
         max-width: 100%;
@@ -506,12 +510,9 @@ p {
     }
 
     .cards .card {
-        height: calc(100% / 4 - 10px);
-        width: calc(100% / 4 - 10px);
-        cursor: pointer;
-        position: relative;
-        perspective: 300px;
-        transform-style: preserve-3d;
+        height: calc(100% / 4 - 6px);
+        width: calc(100% / 4 - 6px);
+    
     }
 
     .clock {
@@ -528,6 +529,11 @@ p {
 
     .clock p {
         font-size: 10px;
+    }
+
+    .memory-game {
+        width: 300px;
+        height: 300px;
     }
 
 }

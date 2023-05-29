@@ -4,9 +4,14 @@ let cards = document.querySelectorAll(".card");
 let startButton = document.getElementById("start");
 let quitButton = document.getElementById("reset");
 let newRadioLevel = document.querySelector('input[name="level"]:checked');
+let beginnerRadioButton = document.getElementById("beginner");
+let intermidiateRadioButton = document.getElementById("intermidiate");
 startButton.addEventListener("click", newGame);
 
 quitButton.addEventListener("click", quitGame);
+quitButton.style.display = "none";
+startButton.style.display = "block";
+
 
 
 
@@ -81,7 +86,7 @@ function shuffleCard() {
 shuffleCard();
 
 cards.forEach(card => {
-    card.addEventListener("click", flipCard);
+    card.removeEventListener("click", flipCard);
 });
 
 //clock
@@ -121,6 +126,7 @@ function updateClock() {
 
 function newGame() {
 
+    console.log("newGame");
     cards.forEach(card => {
         card.classList.remove("flip");
     });
@@ -137,7 +143,11 @@ function newGame() {
         time = 30;
     }
     clockInterval = setInterval(updateClock, 1000);
-    startButton.removeEventListener("click", newGame);
+    startButton.style.display = "none";
+    quitButton.style.display = "block";
+    beginnerRadioButton.disabled = true;
+    intermidiateRadioButton.disabled = true;
+    //startButton.removeEventListener("click", newGame);
 
 }
 
@@ -156,9 +166,21 @@ function endGame() {
     } else {
         alert("YOU LOSE");
     }
+
+    cards.forEach(card => {
+        card.classList.remove("flip");
+    });
+    cards.forEach(card => {
+        card.removeEventListener("click", flipCard);
+    });
     disableDeck = true;
 
-    startButton.addEventListener("click", newGame);
+
+    //startButton.addEventListener("click", newGame);
+    startButton.style.display = "block";
+    quitButton.style.display = "none";
+    beginnerRadioButton.disabled = false;
+    intermidiateRadioButton.disabled = false;
 }
 
 //Quit button
@@ -170,15 +192,20 @@ function quitGame() {
         card.classList.remove("flip");
     });
     shuffleCard();
-    cards.forEach(card => {
+    /*cards.forEach(card => {
         card.addEventListener("click", flipCard);
-    });
+    });*/
     disableDeck = true;
 
     document.getElementById("clock").textContent = "00:00"; 
     clearInterval(clockInterval);
 
-    startButton.addEventListener("click", newGame);
+    //startButton.addEventListener("click", newGame);
+    startButton.style.display = "block";
+    quitButton.style.display = "none";
+
+    beginnerRadioButton.disabled = false;
+    intermidiateRadioButton.disabled = false;
 
 }
 
