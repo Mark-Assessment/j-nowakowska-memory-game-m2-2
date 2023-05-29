@@ -5,14 +5,14 @@
 }
 
 body {
-    
-    min-height : 100vh;
-    background: #f2f2f2; 
+
+    min-height: 100vh;
+    background: #f2f2f2;
 }
 
 .nav-bar {
-    font-family: 'Marcellus', serif;
-    display:flex;
+    font-family: 'Marcellus', serif, sans-serif;
+    display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -23,12 +23,12 @@ body {
 }
 
 .links a {
-    font-weight:400;
+    font-weight: 400;
     text-decoration: none;
     color: #000000;
-    font-size :20px;
-    display : block;
-    padding : 10px 5px;
+    font-size: 20px;
+    display: block;
+    padding: 10px 5px;
 
 }
 
@@ -39,22 +39,22 @@ body {
 }
 
 .nav-bar a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .active {
-    background-color : #f96d00;
-    opacity : 0.7 ; 
+    background-color: #f96d00;
+    opacity: 0.7;
     border-radius: 5px;
 }
 
 
 .links li {
     list-style: none;
-    margin-right : 100px;
+    margin-right: 100px;
 }
 
-.logo{
+.logo {
     margin-left: 50px;
     margin-top: 20px;
 }
@@ -67,13 +67,13 @@ body {
 button {
     cursor: pointer;
     height: 80px;
-    font-family: 'Marcellus', serif;
+    font-family: 'Marcellus', serif, sans-serif;
     font-size: 40px;
     text-align: center;
     font-weight: 400;
     color: #393e46;
     background-color: #f2f2f2;
-    padding : 5px;
+    padding: 5px;
     border-radius: 10px;
     border: 0;
     user-select: none;
@@ -83,39 +83,58 @@ button {
 legend {
     border-radius: 15px;
     text-align: center;
-    background-color: #393e46;
+    background-color: #f96d00;
     padding: 4px;
 }
 
 h1 {
     font-size: 30px;
 }
-/*
-.cloud{
-   width: 20px;
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: #f96d00;
+    padding-bottom: 40px;
+    margin: 40px;
+}
+
+.game {
+    min-width: 100%;
+    max-height: 100%;
+    overflow: clip;
+    justify-content: center;
+    align-items: center;
     display: flex;
-}*/
+}
+
+.flex-box {
+    flex-direction: column;
+}
 
 .card .back-view img {
     max-width: 100px;
 }
 
 .card .back-view {
-   transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
 }
 
-.card .front-view img{
+.card .front-view img {
     max-width: 100px;
     background-color: #f2f2f2;
 }
 
-.cards, .card, .view {
+.cards,
+.card,
+.view {
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+}
 
-.cards{
+.cards {
     height: 100%;
     width: 100%;
     flex-wrap: wrap;
@@ -131,17 +150,17 @@ h1 {
     transform-style: preserve-3d;
 }
 
-.memory-game{
+.memory-game {
     height: 700px;
     width: 700px;
-    background : #f96d00;
+    background: #f96d00;
     border-radius: 10px;
     padding: 50px;
-    margin : 0 auto ;
+    margin: 0 auto;
 }
 
 
-.cards .card .view{
+.cards .card .view {
     width: 100%;
     height: 100%;
     background: #f2f2f2;
@@ -154,73 +173,80 @@ h1 {
     user-select: none;
 }
 
-.card.flip .back-view{
+.card.flip .back-view {
     transform: rotateY(0);
 }
 
-.card.flip .front-view{
+.card.flip .front-view {
     transform: rotateY(180deg);
 }
 
-.card.shake{
+.card.shake {
     animation: shake 0.35s ease-in-out;
 }
 
-@keyframes shake{
-     10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
+@keyframes shake {
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
 
 }
+
 /*-----footer css-----*/
 
-footer{
+footer {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     width: 100%;
 }
 
-footer > a {
+footer>a {
     font-size: 20px;
-    color: #F95813;
+    color: #f96d00;
     padding: 5px 10px;
     text-decoration: none;
     font-size: 30px;
 }
 
 
-footer > p {
+footer>p {
     color: #000000;
-    font-family:'Marcellus', serif;
+    font-family: 'Marcellus', serif, sans-serif;
     padding: 10px;
 }
 
 /*-----clock css-------*/
 
 .clock {
-    font-family: 'Marcellus', serif;
+    font-family: 'Marcellus', serif, sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    padding:40px 20px 20px 20px ;
-    border-radius : 5px;
-    background-color:#f96d00;
+    padding: 40px 20px 20px 20px;
+    border-radius: 5px;
+    background-color: #f96d00;
 }
 
-.clock span{
+.clock span {
     font-weight: 700;
 }
 
@@ -230,17 +256,17 @@ footer > p {
 
 /*------radio buttons------*/
 
-input[type="radio"]{
+input[type="radio"] {
     cursor: pointer;
 }
 
-.levels i{
+.levels i {
     font-weight: 400;
     font-size: 25px;
 }
 
 .levels {
-  text-align: center;
+    text-align: center;
 }
 
 .game-buttons {
@@ -252,47 +278,240 @@ input[type="radio"]{
 fieldset {
     display: flex;
     padding: 40px;
-    border : none;
+    border: none;
     border-radius: 5px;
     justify-content: space-around;
-    background : #f96d00;
+    background: #f96d00;
 }
 
 /*------rules section css------*/
 
 p {
-    font-family: 'Marcellus', serif;
+    font-family: 'Marcellus', serif, sans-serif;
     font-size: 20px;
-    text-align: center ;
+    text-align: center;
     padding-bottom: 20px;
-    display:block;
+    display: block;
     line-height: 50px
 }
 
 .rules-heading {
     text-align: center;
-    font-family: 'Marcellus', serif;
+    font-family: 'Marcellus', serif, sans-serif;
     padding: 50px;
 }
 
-/* --------media queries----------*/
+/* --------media queries tablet----------*/
 @media screen and (max-width: 1000px) {
-     *{
-        margin:0;
-        padding:0;
-        border:0;
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
     }
+
+    .nav-bar {
+        font-size: 100%;
+        height: 300px;
+
+    }
+
+
 
     .game-buttons {
         width: 100%;
-        font-size : 20px;
-        height: 200px;
+        font-size: 20px;
+        height: 50px;
     }
 
     .logo {
+
         display: none;
     }
 
+    .nav-bar a {
+        font-size: 10px;
+    }
 
+
+    .clock {
+        padding: 0px 20px 10px 10px;
+        height: 100%;
+        width: 200px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .clock span {
+        font-weight: 100;
+    }
+
+    .clock p {
+        font-size: 20px;
+    }
+
+    .nav-bar li {
+        float: right;
+        margin-right: 30px;
+    }
+
+    button {
+        font-size: 20px;
+        margin: 0 auto;
+        height: 20px;
+        padding: 0 10px;
+    }
+
+    legend {
+        font-size: 10px;
+    }
+
+    fieldset {
+        padding: 0 3px 3px 3px;
+    }
+
+    fieldset label {
+        font-size: 10px;
+        padding-right: 2px;
+    }
+
+    section {
+        padding: 0 10px;
+    }
+
+    .level {
+        font-size: 10px;
+        width: 25%;
+    }
+
+    .level i {
+        font-size: 10px;
+    }
+
+    .memory-game {
+        width: 500px;
+        height: 500px;
+    }
+
+    .card .back-view img {
+        width: 100%;
+    }
+
+    .card .front-view img {
+        max-width: 100%;
+    }
+
+    h2 {
+        padding-bottom: 5px;
+    }
+
+
+
+
+}
+
+/* --------media queries telephone----------*/
+@media screen and (max-width: 414px) {
+    .nav-bar {
+        font-size: 100%;
+    }
+
+    .nav-bar li {
+        float: right;
+        margin-right: 30px;
+    }
+
+    button {
+        font-size: 20px;
+        margin: 0 auto;
+        height: 20px;
+        padding: 0 10px;
+    }
+
+    legend {
+        font-size: 10px;
+    }
+
+    fieldset {
+        padding: 0 3px 3px 3px;
+    }
+
+    fieldset label {
+        font-size: 10px;
+        padding-right: 2px;
+    }
+
+    section {
+        padding: 0 10px;
+    }
+
+    .clock {
+        padding: 0px 20px 10px 10px;
+        height: 100%;
+        width: 25%;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .clock span {
+        font-weight: 100;
+    }
+
+    .clock p {
+        font-size: 15px;
+    }
+
+    .level {
+        font-size: 10px;
+        width: 25%;
+    }
+
+    .level i {
+        font-size: 10px;
+    }
+
+    .memory-game {
+        width: 400px;
+        height: 400px;
+    }
+
+    .card .back-view img {
+        width: 100%;
+    }
+
+    .card .front-view img {
+        max-width: 100%;
+    }
+
+    h2 {
+        padding-bottom: 5px;
+    }
+
+
+
+}
+
+/*------------media queries small phone---------*/
+@media screen and (max-width: 300px) {
+    .memory-game {
+        width: 100%;
+        height: 325px;
+    }
+
+    .card .back-view img {
+        max-width: 100%;
+    }
+
+    .card .front-view img {
+        max-width: 100%;
+    }
+
+    .cards .card {
+        height: calc(100% / 4 - 10px);
+        width: calc(100% / 4 - 10px);
+        cursor: pointer;
+        position: relative;
+        perspective: 300px;
+        transform-style: preserve-3d;
+    }
 
 }

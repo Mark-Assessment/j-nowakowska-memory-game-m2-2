@@ -1,195 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <script src="https://kit.fontawesome.com/77fbe39460.js" crossorigin="anonymous"></script>
-       <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-       
-        <link rel="icon" type="image/png" href="favicon_io-3/favicon.ico">
-        
 
-      <title>Summertime Memory Card Game</title>
-      <meta name="author" content="Julia Nowakowska">
-    </head>
-    <body>
-        <header>
-            <nav class= "nav-bar">
-                <div class="logo flex-box"><a href="https://www.freeiconspng.com/img/41191" title="Image from freeiconspng.com"><img src="https://www.freeiconspng.com/uploads/hat-and-sunglasses-summer-png-25.png" width="350" alt="hat and sunglasses summer png" /></a></div>
-                <h1 id="title">Summertime Memory Card Game</h1>
-                <div class = "links">
-                    <ul class="nav-bar">
-                        <li class="active" ><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/77fbe39460.js" crossorigin="anonymous"></script>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon_io-3/favicon.ico">
+
+
+    <title>Summertime Memory Card Game</title>
+    <meta name="author" content="Julia Nowakowska">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo flex-box">
+                <img src="assets/images/sunhat.png" width="350" alt="hat and sunglasses summer png">
+            </div>
+            <h1 id="title">Summertime Memory Card Game</h1>
+            <div class="links">
+                <ul class="nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-------Actual Game Part of the page -->
+    <div class="memory-game flex-box">
+        <ul class="cards" id="cardul">
+            <li class="card" id="card1">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
                 </div>
-            </nav>
-        </header>
-
-<!-------Actual Game Part of the page -->
-        <div class="memory-game">
-            <ul class="cards" id="cardul">
-                <li class = "card" id="card1">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/boat.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card2">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/fish.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card3">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/kayak.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card4">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/mountain.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card5">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/sail.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card6">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/sun.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card7">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/wave.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card8">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/clif.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card9">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/boat.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card10">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/fish.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card11">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/kayak.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card12">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/mountain.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card13">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/sail.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card14">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/sun.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card15">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/wave.png" alt="card image">
-                    </div>
-                </li>
-                <li class = "card" id="card16">
-                    <div class= "view front-view">
-                        <img src="assets/images/back.png" alt="back of the card">
-                    </div>
-                    <div class= "view back-view">
-                        <img src="assets/images/clif.png" alt="card image">
-                    </div>
-                </li>
-            </ul>
-        </div>
-    <div class = "game-buttons">
+                <div class="view back-view">
+                    <img src="assets/images/boat.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card2">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/fish.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card3">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/kayak.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card4">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/mountain.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card5">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/sail.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card6">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/sun.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card7">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/wave.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card8">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/clif.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card9">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/boat.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card10">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/fish.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card11">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/kayak.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card12">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/mountain.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card13">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/sail.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card14">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/sun.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card15">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/wave.png" alt="card image">
+                </div>
+            </li>
+            <li class="card" id="card16">
+                <div class="view front-view">
+                    <img src="assets/images/back.png" alt="back of the card">
+                </div>
+                <div class="view back-view">
+                    <img src="assets/images/clif.png" alt="card image">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="game-buttons">
         <div class="clock">
             <p> Time left: <span id="clock">_:__</span></p>
         </div>
         <button type="button" id="start">Start</button>
+        <button type="button" name="button" id="reset">Quit</button>
         <div class="levels">
             <fieldset>
-                <legend> Difficulty Level: </legend>
-                <div>
-                    <input type="radio" id="beginner" name="level" value = "beginner" checked>
-                    <label for="beginner"><i class="fa-sharp fa-solid fa-fire"></i><span></span></label>
+                <legend> Select Difficulty Level: </legend>
+                <div class="icon">
+                    <input type="radio" id="beginner" name="level" value="beginner" checked>
+                    <label for="beginner"><i class="fa-solid fa-sun"></i><span></span></label>
                 </div>
                 <div>
-                    <input type="radio" id="intermidiate" name="level" value = "intermiadiate" checked>
-                    <label for="intermiddiate"><i class="fa-sharp fa-solid fa-fire"></i><i class="fa-sharp fa-solid fa-fire"></i><span></span></label>
+                    <input type="radio" id="intermidiate" name="level" value="intermiadiate" checked>
+                    <label for="intermiddiate"><i class="fa-solid fa-sun"></i><i
+                            class="fa-solid fa-sun"></i><span></span></label>
                 </div>
-            </fielset>
+                </fielset>
         </div>
     </div>
     <section id="rules">
         <div class="flex-box">
             <div>
                 <h2 class="rules-heading">The Rules</h2>
-                <p>To start the game, select easy or hard level above and press button "Start". Try to fins all the pairs by clicking on the card to show its face and so on.
+                <p>To start the game, select easy or hard level above and press button "Start". Try to fins all the
+                    pairs by clicking on the card to show its face and so on.
                     <br>
-                    If the cards do not match, the cards will shake and flip back to face down. You win the game if you find all the pairs before the timer hits 00:00 !
+                    If the cards do not match, the cards will shake and flip back to face down. You win the game if you
+                    find all the pairs before the timer hits 00:00 !
                     <br>
-                    If you wish to know more about memory card games then click on 'About Us' in the menu on top of the page.
+                    If you wish to know more about memory card games then click on 'About Us' in the menu on top of the
+                    page.
                     <br>
                     If you would like to go back to the home page, simply click on "Home".
                     <br>
@@ -198,17 +207,18 @@
             </div>
         </div>
     </section>
-   <!-----<div class="cloud"><img src="assets/images/cloud.png"></div>---->
 
-        <footer>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Follow us on Facebook (link will open in a new tab)"><i class="fab fa-facebook"> </i></a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Follow us on Linkedin(link will open in a new tab)"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/home" target="_blank" rel="noopener" aria-label="Follow us on Twitter (link will open in a new tab)"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Follow us on Instagram (link will open in a new tab)"><i class="fab fa-instagram"></i></a>
-       
-           <p>Copyright © 2023</p>
-        </footer>
-        <script src="assets/js/script.js"></script>
-    </body>
+    <footer>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener"
+            aria-label="Follow us on Facebook (link will open in a new tab)"><i class="fab fa-facebook"> </i></a>
+        <a href="https://www.github.com" target="_blank" rel="noopener"
+            aria-label="Follow us on Github (link will open in a new tab)"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/home" target="_blank" rel="noopener"
+            aria-label="Follow us on Twitter (link will open in a new tab)"><i class="fab fa-twitter"></i></a>
+
+        <p>Copyright © 2023</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
 
 </html>
