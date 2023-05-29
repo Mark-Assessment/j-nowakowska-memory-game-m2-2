@@ -392,8 +392,8 @@ p {
     }
 
     .memory-game {
-        width: 500px;
-        height: 500px;
+        width: 600px;
+        height: 600px;
     }
 
     .card .back-view img {
@@ -414,7 +414,7 @@ p {
 }
 
 /* --------media queries telephone----------*/
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 491px) {
     .nav-bar {
         font-size: 100%;
     }
@@ -432,7 +432,7 @@ p {
     }
 
     legend {
-        font-size: 10px;
+        font-size: 5px;
     }
 
     fieldset {
@@ -445,7 +445,7 @@ p {
     }
 
     section {
-        padding: 0 10px;
+        padding: 20px;
     }
 
     .clock {
@@ -461,7 +461,7 @@ p {
     }
 
     .clock p {
-        font-size: 15px;
+        font-size: 9px;
     }
 
     .level {
@@ -470,7 +470,7 @@ p {
     }
 
     .level i {
-        font-size: 10px;
+        font-size: 5px;
     }
 
     .memory-game {
@@ -495,11 +495,7 @@ p {
 }
 
 /*------------media queries small phone---------*/
-@media screen and (max-width: 300px) {
-    .memory-game {
-        width: 100%;
-        height: 325px;
-    }
+@media screen and (max-width: 397px) {
 
     .card .back-view img {
         max-width: 100%;
@@ -516,6 +512,22 @@ p {
         position: relative;
         perspective: 300px;
         transform-style: preserve-3d;
+    }
+
+    .clock {
+        padding: ;
+        height: 100%;
+        width: 100px;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .clock span {
+        font-weight: 100;
+    }
+
+    .clock p {
+        font-size: 10px;
     }
 
 }
