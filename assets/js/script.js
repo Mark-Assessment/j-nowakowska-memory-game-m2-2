@@ -13,7 +13,7 @@ quitButton.addEventListener("click", quitGame);
 
 let firstCard, secondCard;
 let matched = 0;
-let disableDeck = false;
+let disableDeck = true
 let clockInterval;
 
 

@@ -260,3 +260,88 @@ Each page within the site has a responsive and consistent navigation system. Det
 - **Music**
   - **Feature** - create a selection of different music to be able to play in the background.
   - **Reasons For The Feature Not Being Currently Included** - not a sufficient amount of time to execute this on a desired level.
+## Issues and Bugs
+The developer runs into several issues during the development of this site. The most interesting ones have been described below, this includes the fix for the bug.
+
+**shuffleCard function bug** - A bug was detected whilst the developer was playing the game to check if the radio buttons and timer were working. During the test, the developer noticed that despite creating a function shuffleCard(); the cards kept appearing in the same spots. The developer has tried to fix the bug by creating an array and assigning a number to each card and utilising Math. random(); method so the cards would randomly swap locations. Later, the developer tried to utilise the appendChild(); method with their mentor as it turned out the cards were not shuffling because they were part of a Node list, therefore, being overwritten upon the shuffle function being called as an array was used for that. After extensive research, the developer has finally managed to find a way to rectify this issue by using both appendChild and Math random methods just in different capacities. With the help of their mentor, Owonikoko Oluwaseun, the issue was permanently rectified.
+**clockInterval bug** - A bug was detected by the developer upon creating a "Start" button. The button would trigger the game as expected after selecting the level with a radio button but the timer would speed up every time a different level was selected and the "Start" button would be repeatedly pressed. After an extensive search, I have found that this was caused by the clockInterval method in the timer itself and the new game function. This confused the Javascript code that kept adding to the already working timer, hence speeding it up after every click. The developer removed the clockInterval from the timer and put it only in the function itself.
+**Quit button** - Upon creating the quit button the developer realised that it did not trigger the desired behaviour. After utilising the eventLisener the button seems to speed up the timer but does not reset the game at all. The "quit" button was selected by id and a function was created for it. The function was supposed to reset the game to default by shuffling and flipping cards, resetting the timer and allowing the "Start" button to be clicked again. Initially, none of these were working. The developer instead of setting the new time interval (which was speeding it up ) decided to use the textContent to reset the clock back to 0 and clearInterval to keep the clock from restarting automatically. Then the eventListener for the "Start" button was added so that the player can start the game without the need to reload the window. The eventListener for the "Quit" button was also placed in the root of the document. These steps finally rectified the issue.
+## Technologies Used
+### Main Languages Used
+- HTML5
+- CSS3
+-JavaScript
+
+### Frameworks, Libraries & Programs Used
+[GitHub](https://github.com/ "Link to Github") - was used to store the project after pushing from Codeanywhere.
+[Codeanywhere](https://codeanywhere.com/signin"Link to Codeanywhere") - was used to write and commit the code as well as push it to GitHub.
+[Font Awesome](https://fontawesome.com/ "Link to Font Awesome") - was used to obtain icons for the project.
+[Figma](https://www.figma.com/ "Link to Figma") - was used to create Wireframes
+[Google Fonts](https://fonts.google.com/ "Link to Google fonts")- was used to source fonts for the project.
+[Canva](https://www.canva.com/ "Link to Canva") - was used to create graphics for the project (Like the logo and memory card images)
+[Bootstrap](https://getbootstrap.com/ "Link to Bootstrap") - was utilised for the flex-box method.
+[Am I Responsive?](https://ui.dev/amiresponsive "Link to Am I Responsive?") -  was utilised to check if the site is responsive 
+[Favicon](https://favicon.io/ "Link to Favicon") - was used to create a logo for the business and browser tab.
+ 
+
+[Back to the top](#memory-card-game)
+
+## Testing
+## Testing User Stories
+
+#### New Player Goals:
+1. As a new player, I want to access the web game easily and be able to play the memory-card game on a computer, tablet or phone.
+
+    - The game is visible and easily accessible by being in the centre of the home page. 
+    - The site is responsive on the devices outlined above. 
+  - Website layout is easy to navigate. 
+
+2. As a new player, I want to be able to navigate through the site with ease and access the information I require to play the game aka game rules.
+
+    - The navigation bar is easily accessible and visible at the top of the page.
+    - The navigation bar takes the user to the correct destination and is labelled correctly.
+    - The rules are outlined underneath the game, easily visible due to its black, big lettering that contrasts with the background.
+
+3. As a new player, I want to easily navigate to content I have previously viewed within a small number of steps.
+
+    - The navigation bar is easily accessible and visible at the top of the page.
+    - The navigation bar takes the user to the correct destination and is labelled correctly
+    - Website layout is easy to navigate. 
+
+#### Returning Player Goals:
+
+1. As a returning player, I want to be able to access the game straight away.
+
+    - The game is situated in the centre of the home page, therefore easily accessible.
+    -  The game loads and gives the player time to start the game.
+    - Website layout is easy to navigate 
+
+2. As a returning player, I want the information I seek to be easily accessible, like game rules.
+
+    - Rules are situated below the game in the focal point of the site.  
+    - Website layout is easy to navigate.
+    - The navigation bar is easily accessible and visible at the top of the page.
+
+3. As a returning player, I expect to play a fully functional game.
+
+    - The game is functional and logically designed
+    - The game is working correctly and an alert will inform a player if they won or lost.
+    - The game has required the cards to get matched and it is disabled if the start button was not pressed.
+
+#### Person with an interest in memory card games Goals :
+1. As a person with an interest in memory card games, I want to be able to expand on my knowledge by finding factually accurate content.
+
+    - The About page includes a brief history of memory card games.
+    - The navigation bar is easily accessible and visible at the top of the page.
+
+2. As a person with an interest in memory card games, I want to access a site with a functional memory card game.
+
+    - The game is fully functional including the timer and all the buttons.
+    - The game works as intended and informs the player if they won or lost.
+    - The game rules are outlined below the game board to help the user understand the game.
+
+3. As a person with an interest in memory card games, I want to easily navigate the entire site intuitively.
+
+    - The navigation bar is easily accessible and visible at the top of the page.
+    - The navigation bar takes the user to the correct destination and is labelled correctly.
+    - Website layout is easy to navigate. 
