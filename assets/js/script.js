@@ -183,5 +183,3 @@ function endGame() {
     quitButton.removeEventListener("click", quitGame);
 }*/
 
-
-//document.getElementById("quit").onclick = function () { quitGame(); };
