@@ -1,5 +1,4 @@
-// cards, flip and shake 
-
+// Cards for the game; flip and shake functions
 let cards = document.querySelectorAll(".card");
 let startButton = document.getElementById("start");
 let quitButton = document.getElementById("reset");
@@ -7,21 +6,14 @@ let newRadioLevel = document.querySelector('input[name="level"]:checked');
 let beginnerRadioButton = document.getElementById("beginner");
 let intermidiateRadioButton = document.getElementById("intermidiate");
 startButton.addEventListener("click", newGame);
-
 quitButton.addEventListener("click", quitGame);
 quitButton.style.display = "none";
 startButton.style.display = "block";
-
-
-
-
 
 let firstCard, secondCard;
 let matched = 0;
 let disableDeck = true
 let clockInterval;
-
-
 
 function flipCard({ target: clickedCard }) {
     if (clickedCard !== firstCard && !disableDeck) {
@@ -51,7 +43,7 @@ function matchCards(img1, img2) {
         firstCard = secondCard = "";
         return disableDeck = false;
     }
-
+// These functions allow the cards to shake and flip back if incorrectly matched, or flip and stay flipped if 2 cards are matched correctly 
     setTimeout(() => {
         firstCard.classList.add("shake");
         secondCard.classList.add("shake");
@@ -64,7 +56,7 @@ function matchCards(img1, img2) {
         disableDeck = false;
     }, 1500);
 }
-
+// This function let the cards shuffle in a random sequence
 function shuffleCard() {
     matched = 0;
     disableDeck = false;
@@ -85,18 +77,16 @@ function shuffleCard() {
 
 shuffleCard();
 
+//This piece of code prevents the cards from being flipped when the game is first run 
 cards.forEach(card => {
     card.removeEventListener("click", flipCard);
 });
 
-//clock
-
+// Clock - this creates the clock used in the game, inspiration for this was taken from W3School and Very simple JavaScript timer [setInterval()] youtube video ("https://www.youtube.com/watch?v=4piMZDO5IOI")
 const startingTime = 0.3;
 let time = startingTime * 60;
 
 const clockEl = document.getElementById("clock");
-
-//clockInterval = setInterval(updateClock, 1000);
 
 function updateClock() {
 
@@ -106,24 +96,19 @@ function updateClock() {
     if (time < 10) {
         seconds = `0${seconds}`;
     }
-
     clockEl.innerHTML = `${minutes}:${seconds}`;
 
     if (time <= 0) {
         endGame();
-
     }
-
+//This allows the timer to end if all 8 cards are matched and alert to pop up for the player with you won message 
     if (matched === 8) {
         endGame();
     }
     time--;
-
 }
 
-// levels and start game
-
-
+// Start game and levels - this function is used for the start button by unlocking the cards so they can be flipped, as well as sets a timer for each level (radio buttons) 
 function newGame() {
 
     console.log("newGame");
@@ -143,28 +128,25 @@ function newGame() {
         time = 30;
     }
     clockInterval = setInterval(updateClock, 1000);
+//Below allows the Start button to be removed after the function above is called and Quit button to appear instead - this happens throughout the code     
     startButton.style.display = "none";
     quitButton.style.display = "block";
     beginnerRadioButton.disabled = true;
     intermidiateRadioButton.disabled = true;
-    //startButton.removeEventListener("click", newGame);
-
 }
 
 
-//Win/Lose Game function
-
-
+// Win and Lose Game function
 function endGame() {
     console.log("endGame called");
     clearInterval(clockInterval);
     console.log("MATCHED", matched);
 
     if (matched === 8) {
-        alert("YOU WIN");
+        alert("Congratulations! You Won - Choose the difficulty level and press the Start button again to begin a new game.");
 
     } else {
-        alert("YOU LOSE");
+        alert("Better luck next time - you lost! Adjust the difficulty level and press the Start button to practice some more.");
     }
 
     cards.forEach(card => {
@@ -175,37 +157,30 @@ function endGame() {
     });
     disableDeck = true;
 
-
-    //startButton.addEventListener("click", newGame);
     startButton.style.display = "block";
     quitButton.style.display = "none";
+//Below disables the radio buttons when the game is beign played and timer is running, they get unlocked again after the game ends
     beginnerRadioButton.disabled = false;
     intermidiateRadioButton.disabled = false;
 }
 
-//Quit button
-
-
+//Quit button - restarts the game to default
 function quitGame() {
     console.log('quitGame')
     cards.forEach(card => {
         card.classList.remove("flip");
     });
     shuffleCard();
-    /*cards.forEach(card => {
-        card.addEventListener("click", flipCard);
-    });*/
+  
     disableDeck = true;
 
     document.getElementById("clock").textContent = "00:00"; 
     clearInterval(clockInterval);
 
-    //startButton.addEventListener("click", newGame);
     startButton.style.display = "block";
     quitButton.style.display = "none";
 
     beginnerRadioButton.disabled = false;
     intermidiateRadioButton.disabled = false;
-
 }
 

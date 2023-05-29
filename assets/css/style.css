@@ -117,6 +117,9 @@ h2 {
     flex-direction: column;
 }
 
+/*-----memory card game field css-----*/
+
+
 .card .back-view img {
     max-width: 100px;
 }
@@ -498,16 +501,8 @@ p {
 
 }
 
-/*------------media queries small phone---------*/
-@media screen and (max-width: 392px) {
-
-    .card .back-view img {
-        max-width: 100%;
-    }
-
-    .card .front-view img {
-        max-width: 100%;
-    }
+/*------------media queries small device---------*/
+@media screen and (max-width: 377px) {
 
     .cards .card {
         height: calc(100% / 4 - 6px);
@@ -516,7 +511,6 @@ p {
     }
 
     .clock {
-        padding: ;
         height: 100%;
         width: 100px;
         font-weight: 100;
@@ -535,5 +529,28 @@ p {
         width: 300px;
         height: 300px;
     }
+
+    #title{
+        font-size: 15px;
+
+    }
+
+    .nav-bar {
+        font-size: 100%;
+    }
+
+    .nav-bar li {
+        float: right;
+        margin-right: 10px;
+    }
+
+    .icon i {
+       size: 5px;
+    }
+
+    .level {
+        font-size: 5px;
+    }
+
 
 }
