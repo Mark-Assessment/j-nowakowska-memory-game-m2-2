@@ -355,16 +355,16 @@ Manual testing was conducted on the following elements that appear on every page
 - Clicking on the navigation bar items and the active item having an orange background 
 
 <p>
-  <img src="" width="100%" alt="active site test- about">
-  <img src="" width="100%" alt="active site test -home">
+  <img src="assets/images/readme img/active site test - about.png" width="100%" alt="active site test- about">
+  <img src="assets/images/readme img/active site test - home.png" width="100%" alt="active site test -home">
 </p> 
 
 - Clicking on the navigation bar menu items to take the user to the correct page on the
 website
 
 <p>
-  <img src="" width="100%" alt="nav-bar about test">
-  <img src="" width="100%" alt="nav-bar home test">
+  <img src="assets/images/readme img/responsiveness about test .png" width="100%" alt="nav-bar about test">
+  <img src="assets/images/readme img/active site test - home.png" width="100%" alt="nav-bar home test">
 </p> 
 
 - Clicking on the navigation bar menu items to take the user to the correct page on the
@@ -375,7 +375,7 @@ website
     LinkedIn
 
   <p>
-  <img src="" width="100%" alt=" social media test">
+  <img src="assets/images/readme img/footer testing.png" width="100%" alt=" social media test">
   </p>  
 
 ### Home Page
@@ -399,13 +399,13 @@ Manual testing was conducted on the following elements of the [Home Page](index.
 
  <p>
   <img src="" width="100%" alt="Start/Quit button test">
- <img src="" width="100%" alt="Start/Quit button test">
+ <img src="assets/images/readme img/quit button.png" width="100%" alt="Start/Quit button test">
 </p>  
 
 - Radio buttons are greyed out/blocked after the game starts and come back to normal after the game finishes by the timer running to 00:00 or Quit button being pressed
 
 <p>
-  <img src="" width="100%" alt="Grayed out radio buttons">
+  <img src="assets/images/readme img/greyed out radio.png" width="100%" alt="Grayed out radio buttons">
   <img src="" width="100%" alt="Radio buttons back to normal">
 </p>  
 
