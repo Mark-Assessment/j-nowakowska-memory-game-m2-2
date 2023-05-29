@@ -1,7 +1,7 @@
 # Summertime Memory Card Game
 
 <p>
-  <img src="" width="100%" alt="mock up photos">
+  <img src="assets/images/readme img/overview.png" width="100%" alt="mock up photos">
 </p>
 
 [Click here to view the live project]
@@ -279,12 +279,9 @@ The developer runs into several issues during the development of this site. The 
 [Figma](https://www.figma.com/ "Link to Figma") - was used to create Wireframes.
 [Google Fonts](https://fonts.google.com/ "Link to Google fonts")- was used to source fonts for the project.
 [Canva](https://www.canva.com/ "Link to Canva") - was used to create graphics for the project (Like the logo and memory card images).
-[Bootstrap](https://getbootstrap.com/ "Link to Bootstrap") - was utilised for the flex-box method.
 [Am I Responsive?](https://ui.dev/amiresponsive "Link to Am I Responsive?") -  was utilised to check if the site is responsive. 
 [Favicon](https://favicon.io/ "Link to Favicon") - was used to create a logo for the business and browser tab.
  
-
-
 
 ## Testing
 ## Testing User Stories
@@ -460,6 +457,17 @@ Manual testing was conducted on the following elements of the [Home Page](index.
   <img src="assets/images/readme img/back to 0.png" width="100%" alt="new game">
 </p> 
 
+### About Page
+Manual testing was conducted on the following elements of the [About Page](about. html):
+
+- The responsiveness of the page
+<p>
+  <img src="assets/images/readme img/responsiveness about test .png" width="100%" alt="about page responsiveness test">
+  <img src="" width="100%" alt="about page rules responsiveness test">
+  <img src="" width="100%" alt="about page footer responsiveness test">
+</p>  
+
+
 ## Automated Testing
 
 ### Code Validation
@@ -470,19 +478,19 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 - Home Page
 
 <p>
-  <img src=" " width="100%" alt=" Home Page Validator">
+  <img src=" assets/images/readme img/home validator.png" width="100%" alt=" Home Page Validator">
 </p> 
 
 - About Page
 
 <p>
-  <img src="" width="100%" alt=" About Page Validator">
+  <img src="assets/images/readme img/about validator.png" width="100%" alt=" About Page Validator">
 </p> 
 
 - CSS 
 
 <p>
-  <img src="" width="100%" alt="CSS Validator">
+  <img src="assets/images/readme img/CSS validator.png" width="100%" alt="CSS Validator">
 </p> 
 
 
@@ -490,19 +498,19 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 - Chrome
 
 <p>
-  <img src="" width="100%" alt="chrome test">
+  <img src="assets/images/readme img/Chrome.png" width="100%" alt="chrome test">
 </p> 
 
 - Firefox
 
 <p>
-  <img src="a width="100%" alt="firefox test">
+  <img src="assets/images/readme img/Firefox.png" width="100%" alt="firefox test">
 </p> 
 
 - Safari
 
 <p>
-  <img src="" width="100%" alt="safari test">
+  <img src="assets/images/readme img/Safari.png" width="100%" alt="safari test">
 </p> 
 
 
@@ -517,7 +525,7 @@ This milestone project was developed using [Codeanywhere](https://codeanywhere.c
 Below there are instructions on how to successfully deploy this page to GitHub Pages from its GitHub repository.
 
 1. Sign up to [GitHub](https://github.com/signup "Link to the GitHub Sign Up Page") or if you already have an account, simply [Log In](https://github.com/login "Link to log in to GitHub")
-2. Find the [GitHub Repository](https://github.com/juginowakowska/milestone-project2/tree/main "Link to the Memory Card Game Repository)
+2. Find the [GitHub Repository](https://github.com/juginowakowska/milestone-project2/tree/main "Link to the Memory Card Game Repository")
 3. At the top of the repository, select Settings from the menu items.
 4. Scroll down the Settings page to the "Pages" section.
 5. Under "Source" click the drop-down menu labelled "None" and select "Main".
