@@ -48,7 +48,7 @@ The inspiration for this site came from well-known and loved memory games, that 
 
 The main requirements of this project are to build a responsive, simple, single-player pattern-matching memory game that is fun to play, using HTML, CSS and JavaScript.
 
-[Back to the top](#memory-card-game)
+
 
 ## UX
 
@@ -180,7 +180,7 @@ The typography pairing used on this site is [Marcellus, serif](https://fonts.goo
 
 The selected imagery has been sourced from various sites. There are two png graphics included in the top left corner on the 'home' and 'about' pages. There is also an image showcasing a card memory game in the 'about' section.
 
-[Back to the top](#memory-game)
+
 
 ## Features
 
@@ -276,15 +276,15 @@ The developer runs into several issues during the development of this site. The 
 [GitHub](https://github.com/ "Link to Github") - was used to store the project after pushing from Codeanywhere.
 [Codeanywhere](https://codeanywhere.com/signin"Link to Codeanywhere") - was used to write and commit the code as well as push it to GitHub.
 [Font Awesome](https://fontawesome.com/ "Link to Font Awesome") - was used to obtain icons for the project.
-[Figma](https://www.figma.com/ "Link to Figma") - was used to create Wireframes
+[Figma](https://www.figma.com/ "Link to Figma") - was used to create Wireframes.
 [Google Fonts](https://fonts.google.com/ "Link to Google fonts")- was used to source fonts for the project.
-[Canva](https://www.canva.com/ "Link to Canva") - was used to create graphics for the project (Like the logo and memory card images)
+[Canva](https://www.canva.com/ "Link to Canva") - was used to create graphics for the project (Like the logo and memory card images).
 [Bootstrap](https://getbootstrap.com/ "Link to Bootstrap") - was utilised for the flex-box method.
-[Am I Responsive?](https://ui.dev/amiresponsive "Link to Am I Responsive?") -  was utilised to check if the site is responsive 
+[Am I Responsive?](https://ui.dev/amiresponsive "Link to Am I Responsive?") -  was utilised to check if the site is responsive. 
 [Favicon](https://favicon.io/ "Link to Favicon") - was used to create a logo for the business and browser tab.
  
 
-[Back to the top](#memory-card-game)
+
 
 ## Testing
 ## Testing User Stories
@@ -345,6 +345,165 @@ The developer runs into several issues during the development of this site. The 
     - The navigation bar is easily accessible and visible at the top of the page.
     - The navigation bar takes the user to the correct destination and is labelled correctly.
     - Website layout is easy to navigate. 
+
+
+## Manual Testing
+
+### Common Elements Testing
+Manual testing was conducted on the following elements that appear on every page:
+
+- Clicking on the navigation bar items and the active item having an orange background 
+
+<p>
+  <img src="" width="100%" alt="active site test- about">
+  <img src="" width="100%" alt="active site test -home">
+</p> 
+
+- Clicking on the navigation bar menu items to take the user to the correct page on the
+website
+
+<p>
+  <img src="" width="100%" alt="nav-bar about test">
+  <img src="" width="100%" alt="nav-bar home test">
+</p> 
+
+- Clicking on the navigation bar menu items to take the user to the correct page on the
+website
+    Facebook
+    Twitter
+    Instagram
+    LinkedIn
+
+  <p>
+  <img src="" width="100%" alt=" social media test">
+  </p>  
+
+### Home Page
+Manual testing was conducted on the following elements of the [Home Page](index. html):
+
+- The responsiveness of the page
+<p>
+  <img src="" width="100%" alt="home content responsiveness test">
+  <img src="" width="100%" alt="home page responsiveness test">
+  <img src="" width="100%" alt="home page rules responsiveness test">
+  <img src="" width="100%" alt="home page footer responsiveness test">
+</p>  
+
+- The timer is not starting automatically when the page is loaded but after the "Start" button is pressed.
+
+ <p>
+  <img src="" width="100%" alt="timer empty">
+</p>  
+
+- Only the "Start" button is visible as the page is loaded and it changes into a "Quit" button after the game had started.
+
+ <p>
+  <img src="" width="100%" alt="Start/Quit button test">
+ <img src="" width="100%" alt="Start/Quit button test">
+</p>  
+
+- Radio buttons are greyed out/blocked after the game starts and come back to normal after the game finishes by the timer running to 00:00 or Quit button being pressed
+
+<p>
+  <img src="" width="100%" alt="Grayed out radio buttons">
+  <img src="" width="100%" alt="Radio buttons back to normal">
+</p>  
+
+- Difficulty levels dictated by radio buttons are functional as they influence the amount of time on the timer.
+
+<p>
+  <img src="" width="100%" alt="level 1 - 30 seconds timer">
+ <img src="" width="100%" alt="level 2 - 1 minute timer">
+</p> 
+
+- All cards are face down when the page is loaded and they cannot be flipped until the "Start" button is pressed.
+
+<p>
+  <img src="" width="100%" alt=">
+</p>  
+
+- The cursor changes to the pointer if it hovers over the cards
+
+<p>
+  <img src="" width="100%" alt="cursor test">
+</p> 
+
+- The cards can only be flipped if the game is running, triggered by the "Start" button.
+
+<p>
+  <img src="" width="100%" alt="cards being flipped- game running">
+<img src="" width="100%" alt="cards not being flipped- game not running">
+</p> 
+
+- You won an alert if all cards are matched before the timer runs out.
+
+<p>
+  <img src="" width="100%" alt="you won alert">
+</p> 
+
+- You lost the alert if all cards are not matched before the timer runs out.
+
+<p>
+  <img src="" width="100%" alt="you lost alert">
+</p> 
+
+- The timer stops as soon as the player won the game.
+
+<p>
+  <img src="" width="100%" alt="timer after winning">
+</p> 
+
+- The timer goes back to 00:00 and cards flip back and shuffle after every game
+
+<p>
+  <img src="" width="100%" alt="new game">
+</p> 
+
+## Automated Testing
+
+### Code Validation
+The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` and `CSS` code used.
+
+**Results:**
+
+- Home Page
+
+<p>
+  <img src=" " width="100%" alt=" Home Page Validator">
+</p> 
+
+- About Page
+
+<p>
+  <img src="" width="100%" alt=" About Page Validator">
+</p> 
+
+- CSS 
+
+<p>
+  <img src="" width="100%" alt="CSS Validator">
+</p> 
+
+
+### Browser Validation
+- Chrome
+
+<p>
+  <img src="" width="100%" alt="chrome test">
+</p> 
+
+- Firefox
+
+<p>
+  <img src="a width="100%" alt="firefox test">
+</p> 
+
+- Safari
+
+<p>
+  <img src="" width="100%" alt="safari test">
+</p> 
+
 
 ## User testing 
 A few friends and family members were asked to review the page for user experience and to point out any bugs/issues. The input of this group led to small UX adjustments to improve the overall site appearance and user experience. Some of them included: adding the "Quit" button to the site and adjusting the colour scheme and graphics.
