@@ -552,5 +552,10 @@ p {
         font-size: 5px;
     }
 
+    p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
 
 }
