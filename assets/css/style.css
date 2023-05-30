@@ -192,7 +192,7 @@ h2 {
 .card.shake {
     animation: shake 0.35s ease-in-out;
 }
-
+/*----- adapted from W3school-----*/
 @keyframes shake {
 
     10%,
