@@ -6,7 +6,9 @@ let newRadioLevel = document.querySelector('input[name="level"]:checked');
 let beginnerRadioButton = document.getElementById("beginner");
 let intermidiateRadioButton = document.getElementById("intermidiate");
 startButton.addEventListener("click", newGame);
+
 quitButton.addEventListener("click", quitGame);
+
 quitButton.style.display = "none";
 startButton.style.display = "block";
 
@@ -156,6 +158,7 @@ function endGame() {
         card.removeEventListener("click", flipCard);
     });
     disableDeck = true;
+
 
     startButton.style.display = "block";
     quitButton.style.display = "none";
