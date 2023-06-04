@@ -5,7 +5,7 @@
 </p>
 
 [Click here to view the live project]
-<https://8000-juginowakowska-milestone-fnq0hpynqj.us2.codeanyapp.com/>
+(https://juginowakowska.github.io/milestone-project2/)
 
 ## Table of contents
 
