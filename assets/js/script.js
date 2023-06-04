@@ -17,6 +17,7 @@ let matched = 0;
 let disableDeck = true
 let clockInterval;
 
+// Inspiration for the set up was taking from various game building challenges online, W3School and StackOverflow 
 function flipCard({ target: clickedCard }) {
     if (clickedCard !== firstCard && !disableDeck) {
         clickedCard.classList.add("flip");
