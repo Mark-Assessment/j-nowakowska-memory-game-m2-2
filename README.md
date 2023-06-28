@@ -264,8 +264,13 @@ Each page within the site has a responsive and consistent navigation system. Det
 The developer runs into several issues during the development of this site. The most interesting ones have been described below, this includes the fix for the bug.
 
 **shuffleCard function bug** - A bug was detected whilst the developer was playing the game to check if the radio buttons and timer were working. During the test, the developer noticed that despite creating a function shuffleCard(); the cards kept appearing in the same spots. The developer has tried to fix the bug by creating an array and assigning a number to each card and utilising Math. random(); method so the cards would randomly swap locations. Later, the developer tried to utilise the appendChild(); method with their mentor as it turned out the cards were not shuffling because they were part of a Node list, therefore, being overwritten upon the shuffle function being called as an array was used for that. After extensive research, the developer has finally managed to find a way to rectify this issue by using both appendChild and Math random methods just in different capacities. With the help of their mentor, Owonikoko Oluwaseun, the issue was permanently rectified.
+
+
 **clockInterval bug** - A bug was detected by the developer upon creating a "Start" button. The button would trigger the game as expected after selecting the level with a radio button but the timer would speed up every time a different level was selected and the "Start" button would be repeatedly pressed. After an extensive search, I have found that this was caused by the clockInterval method in the timer itself and the new game function. This confused the Javascript code that kept adding to the already working timer, hence speeding it up after every click. The developer removed the clockInterval from the timer and put it only in the function itself.
+
+
 **Quit button** - Upon creating the quit button the developer realised that it did not trigger the desired behaviour. After utilising the eventLisener the button seems to speed up the timer but does not reset the game at all. The "quit" button was selected by id and a function was created for it. The function was supposed to reset the game to default by shuffling and flipping cards, resetting the timer and allowing the "Start" button to be clicked again. Initially, none of these were working. The developer instead of setting the new time interval (which was speeding it up ) decided to use the textContent to reset the clock back to 0 and clearInterval to keep the clock from restarting automatically. Then the eventListener for the "Start" button was added so that the player can start the game without the need to reload the window. The eventListener for the "Quit" button was also placed in the root of the document. These steps finally rectified the issue.
+
 ## Technologies Used
 ### Main Languages Used
 - HTML5
@@ -332,7 +337,7 @@ The developer runs into several issues during the development of this site. The 
     - The navigation bar is easily accessible and visible at the top of the page.
 
 2. As a person with an interest in memory card games, I want to access a site with a functional memory card game.
-
+  <img src="assets/images/readme img/card flipped game run.png" width="100%" alt="cards being flipped- game running">
     - The game is fully functional including the timer and all the buttons.
     - The game works as intended and informs the player if they won or lost.
     - The game rules are outlined below the game board to help the user understand the game.
