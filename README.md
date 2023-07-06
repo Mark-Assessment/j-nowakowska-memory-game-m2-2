@@ -518,7 +518,7 @@ The [JSHint](https://jshint.com) service was used to validate the `JavaScript` c
 
 <p>
   <img src="assets/images/readme img/JavaScript.png" width="100%" alt="JSHint Validator">
-  <img src="assets/images/readme img/JavaScript1.png" width="100%" alt="JSHint Validator">
+  <img src="assets/images/readme img/JavaScript2.png" width="100%" alt="JSHint 1 Validator">
 </p>
 
 ### Browser Validation
