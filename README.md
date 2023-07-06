@@ -483,6 +483,13 @@ Manual testing was conducted on the following elements of the [About Page](about
 
 ## Automated Testing
 
+Both manual and automated testing is used to check if the project's code is written in a way the project works correctly.
+Automated testing can be performed via a JavaScript testing framework like Jest. I am aware of the advantages the automated testing carries like high reliability, as it is run and performed by a programme as the code is developed and it is a lot quicker as hundreds of tests can be performed against the project in a short time frame.
+Although more time-consuming, I have decided to utilise the manual way of testing as the project is quite small and I didn’t have the time capacity in the project window to get automated testing set up correctly.
+Manual testing checks if the project works in accordance with user stories by testing it in different browsers and resolutions. The testing can be performed manually by a potential user, code creator or another third party.
+
+In a real-life scenario, I fully acknowledge I would use Jest to further practice my skills with automated testing and make sure that errors are picked up early and corrected promptly.
+
 ### Code Validation
 
 The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` and `CSS` code used.
