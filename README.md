@@ -145,7 +145,7 @@ The information above were organized in a hierarchical tree structure, showing h
 <summary>Structure of the Site</summary>
 
 <p>
-  <img src="assets/images/readme img/site structure.png" width="100%" alt="structure photos">
+  <img src="assets/images/readme img/site-structure.png" width="100%" alt="structure photos">
 </p>
 
 </details>
@@ -155,9 +155,9 @@ The information above were organized in a hierarchical tree structure, showing h
 Wireframes were made to showcase the appearance of the site pages while keeping a positive user experience in mind. The wireframes were created using an online version of [Figma](https://www.figma.com).
 
 <p>
-    <img src="assets/images/readme img/wireframes back.png" width="100%" alt="Home page back-card wireframes">
-    <img src="assets/images/readme img/wireframes front.png" width="100%" alt="Home page front-card wireframes">
-    <img src="assets/images/readme img/wireframes about.png" width="100%" alt="About page wireframes">
+    <img src="assets/images/readme img/wireframes-back.png" width="100%" alt="Home page back-card wireframes">
+    <img src="assets/images/readme img/wireframes-front.png" width="100%" alt="Home page front-card wireframes">
+    <img src="assets/images/readme img/wireframes-about.png" width="100%" alt="About page wireframes">
 </p>
 
 </details>
@@ -193,7 +193,7 @@ Each page within the site has a responsive and consistent navigation system. Det
 - The **Footer** is 100% in width. The footer is located permanently at the bottom of the page on all screen sizes. The footer contains all social media links and corresponding media logos and a copywrite text at the bottom of the footer.
 
 <dl>
-    <dt><a href="index.html" target="_blank alt="Summertime Memory Card Game Home Page">Home Page</a></dt>
+    <dt><a href="index.html" target="_blank" alt="Summertime Memory Card Game Home Page">Home Page</a></dt>
     <dd>
         The <em>Home Page</em> is a scrollable page and it includes a navigation bar, main game board, buttons, timer and rules on how to play.
         <ul>
@@ -301,7 +301,7 @@ The developer runs into several issues during the development of this site. The 
    - The game is visible and easily accessible by being in the centre of the home page.
    - The site is responsive on the devices outlined above.
    - Website layout is easy to navigate.
-     <img src="assets/images/readme img/normal radio btn .png" width="100%" alt="Radio buttons back to normal">
+     <img src="assets/images/readme img/normal-radio-btn .png" width="100%" alt="Radio buttons back to normal">
 
 2. As a new player, I want to be able to navigate through the site with ease and access the information I require to play the game aka game rules.
 
@@ -324,7 +324,7 @@ The developer runs into several issues during the development of this site. The 
    - Website layout is easy to navigate
 
 2. As a returning player, I want the information I seek to be easily accessible, like game rules.
-   <img src="assets/images/readme img/responsiveness home test.png" width="100%" alt="home content responsiveness test">
+   <img src="assets/images/readme img/responsiveness-home-test.png" width="100%" alt="home content responsiveness test">
 
    - Rules are situated below the game in the focal point of the site.
    - Website layout is easy to navigate.
@@ -335,7 +335,7 @@ The developer runs into several issues during the development of this site. The 
    - The game is functional and logically designed
    - The game is working correctly and an alert will inform a player if they won or lost.
    - The game has required the cards to get matched and it is disabled if the start button was not pressed.
-     <img src="assets/images/readme img/active site test - about.png" width="100%" alt="active site test- about">
+     <img src="assets/images/readme img/active-site-test-about.png" width="100%" alt="active site test- about">
 
 #### Person with an interest in memory card games Goals :
 
@@ -345,7 +345,7 @@ The developer runs into several issues during the development of this site. The 
    - The navigation bar is easily accessible and visible at the top of the page.
 
 2. As a person with an interest in memory card games, I want to access a site with a functional memory card game.
-   <img src="assets/images/readme img/card flipped game run.png" width="100%" alt="cards being flipped- game running">
+   <img src="assets/images/readme img/card-flipped-game-run.png" width="100%" alt="cards being flipped- game running">
 
    - The game is fully functional including the timer and all the buttons.
    - The game works as intended and informs the player if they won or lost.
@@ -366,16 +366,16 @@ Manual testing was conducted on the following elements that appear on every page
 - Clicking on the navigation bar items and the active item having an orange background
 
 <p>
-  <img src="assets/images/readme img/active site test - about.png" width="100%" alt="active site test- about">
-  <img src="assets/images/readme img/active site test - home.png" width="100%" alt="active site test -home">
+  <img src="assets/images/readme img/active-site-test-about.png" width="100%" alt="active site test- about">
+  <img src="assets/images/readme img/active-site-test-home.png" width="100%" alt="active site test -home">
 </p>
 
 - Clicking on the navigation bar menu items to take the user to the correct page on the
   website
 
 <p>
-  <img src="assets/images/readme img/responsiveness about test .png" width="100%" alt="nav-bar about test">
-  <img src="assets/images/readme img/active site test - home.png" width="100%" alt="nav-bar home test">
+  <img src="assets/images/readme img/responsiveness-about-test .png" width="100%" alt="nav-bar about test">
+  <img src="assets/images/readme img/active-site-test-home.png" width="100%" alt="nav-bar home test">
 </p>
 
 - Clicking on the footer items to take the user to the correct page on the
@@ -395,81 +395,81 @@ Manual testing was conducted on the following elements of the [Home Page](index.
 
 - The responsiveness of the page
 <p>
-  <img src="assets/images/readme img/responsiveness home test.png" width="100%" alt="home content responsiveness test">
-  <img src="assets/images/readme img/responsiveness home test 1.png" width="100%" alt="home page responsiveness test">
-  <img src="assets/images/readme img/responsiveness home test 3.png" width="100%" alt="home page rules responsiveness test">
+  <img src="assets/images/readme img/responsiveness-home-test.png" width="100%" alt="home content responsiveness test">
+  <img src="assets/images/readme img/responsiveness-home-test-1.png" width="100%" alt="home page responsiveness test">
+  <img src="assets/images/readme img/responsiveness-home-test-3.png" width="100%" alt="home page rules responsiveness test">
 
 </p>
 
 - The timer is not starting automatically when the page is loaded but after the "Start" button is pressed.
 
  <p>
-  <img src="assets/images/readme img/timer is not starting auto.png" width="100%" alt="timer empty">
+  <img src="assets/images/readme img/timer-is-not-starting-auto.png" width="100%" alt="timer empty">
 </p>
 
 - Only the "Start" button is visible as the page is loaded and it changes into a "Quit" button after the game had started.
 
  <p>
-  <img src="assets/images/readme img/start button.png" width="100%" alt="Start/Quit button test">
- <img src="assets/images/readme img/quit button.png" width="100%" alt="Start/Quit button test">
+  <img src="assets/images/readme img/start-button.png" width="100%" alt="Start/Quit button test">
+ <img src="assets/images/readme img/quit-button.png" width="100%" alt="Start/Quit button test">
 </p>
 
 - Radio buttons are greyed out/blocked after the game starts and come back to normal after the game finishes by the timer running to 00:00 or Quit button being pressed
 
 <p>
-  <img src="assets/images/readme img/greyed out radio.png" width="100%" alt="Grayed out radio buttons">
-  <img src="assets/images/readme img/normal radio btn .png" width="100%" alt="Radio buttons back to normal">
+  <img src="assets/images/readme img/greyed-out-radio.png" width="100%" alt="Grayed out radio buttons">
+  <img src="assets/images/readme img/normal-radio-btn .png" width="100%" alt="Radio buttons back to normal">
 </p>
 
 - Difficulty levels dictated by radio buttons are functional as they influence the amount of time on the timer.
 
 <p>
-  <img src="assets/images/readme img/radio difficult.png" width="100%" alt="level 1 - 30 seconds timer">
- <img src="assets/images/readme img/radio easy.png" width="100%" alt="level 2 - 1 minute timer">
+  <img src="assets/images/readme img/radio-difficult.png" width="100%" alt="level 1 - 30 seconds timer">
+ <img src="assets/images/readme img/radio-easy.png" width="100%" alt="level 2 - 1 minute timer">
 </p>
 
 - All cards are face down when the page is loaded and they cannot be flipped until the "Start" button is pressed.
 
 <p>
-  <img src="assets/images/readme img/cards face down.png" width="100%" alt="all cards face down">
+  <img src="assets/images/readme img/cards-face-down.png" width="100%" alt="all cards face down">
 </p>
 
 - The cursor changes to the pointer if it hovers over the cards
 
 <p>
-  <img src="assets/images/readme img/cursor normal.png" width="100%" alt="cursor test">
-  <img src="assets/images/readme img/cursor poiter.png" width="100%" alt="cursor test">
+  <img src="assets/images/readme img/cursor-normal.png" width="100%" alt="cursor test">
+  <img src="assets/images/readme img/cursor-poiter.png" width="100%" alt="cursor test">
 </p>
 
 - The cards can only be flipped if the game is running, triggered by the "Start" button.
 
 <p>
-  <img src="assets/images/readme img/card flipped game run.png" width="100%" alt="cards being flipped- game running">
-<img src="assets/images/readme img/cards not flip no run.png" width="100%" alt="cards not being flipped- game not running">
+  <img src="assets/images/readme img/card-flipped-game-run.png" width="100%" alt="cards being flipped- game running">
+<img src="assets/images/readme img/cards-not-flip-no-run.png" width="100%" alt="cards not being flipped- game not running">
 </p>
 
 - You won an alert if all cards are matched before the timer runs out.
 
 <p>
-  <img src="assets/images/readme img/you won, timer stop.png" width="100%" alt="you won alert">
+  <img src="assets/images/readme img/you-won-timer-stop.png" width="100%" alt="you won alert">
 </p>
 
 - You lost the alert if all cards are not matched before the timer runs out.
 
 <p>
-  <img src="assets/images/readme img/you lost.png" width="100%" alt="you lost alert">
+  <img src="assets/images/readme img/you-lost.png" width="100%" alt="you lost alert">
 </p>
 
 - The timer stops as soon as the player won the game.
 
 <p>
-  <img src="assets/images/readme img/you won, timer stop.png" width="100%" alt="timer after winning">
+  <img src="assets/images/readme img/you-won-timer-stop.png" width="100%" alt="timer after winning">
 </p>
 
 - The timer goes back to 00:00 and cards flip back and shuffle after every game
 
 <p>
-  <img src="assets/images/readme img/back to 0.png" width="100%" alt="new game">
+  <img src="assets/images/readme img/back-to-0.png" width="100%" alt="new game">
 </p>
 
 ### About Page
@@ -478,7 +478,7 @@ Manual testing was conducted on the following elements of the [About Page](about
 
 - The responsiveness of the page
 <p>
-  <img src="assets/images/readme img/responsiveness about test .png" width="100%" alt="about page responsiveness test">
+  <img src="assets/images/readme img/responsiveness-about-test .png" width="100%" alt="about page responsiveness test">
 </p>
 
 ## Automated Testing
@@ -492,26 +492,26 @@ The [JSHint](https://jshint.com) service was used to validate the `JavaScript` c
 - Home Page
 
 <p>
-  <img src=" assets/images/readme img/home validator.png" width="100%" alt=" Home Page Validator">
+  <img src=" assets/images/readme img/home-validator.png" width="100%" alt=" Home Page Validator">
 </p>
 
 - About Page
 
 <p>
-  <img src="assets/images/readme img/about validator.png" width="100%" alt=" About Page Validator">
+  <img src="assets/images/readme img/about-validator.png" width="100%" alt=" About Page Validator">
 </p>
 
 - CSS
 
 <p>
-  <img src="assets/images/readme img/CSS validator.png" width="100%" alt="CSS Validator">
+  <img src="assets/images/readme img/CSS-validator.png" width="100%" alt="CSS Validator">
 </p>
 
 - JavaScript
 
 <p>
-  <img src="assets/images/readme img/Screenshot 2023-06-28 at 12.26.51.png" width="100%" alt="JSHint Validator">
-  <img src="assets/images/readme img/Screenshot 2023-06-28 at 12.27.07.png" width="100%" alt="JSHint Validator">
+  <img src="assets/images/readme img/JavaScript.png" width="100%" alt="JSHint Validator">
+  <img src="assets/images/readme img/JavaScript1.png" width="100%" alt="JSHint Validator">
 </p>
 
 ### Browser Validation
